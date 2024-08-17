@@ -31,4 +31,31 @@ let myobj={
 // }
 console.log(myobj);
 
+// ****************************************************************************
+
+
+//Stack(primitive) ,Heap(non-primitive)
+
+//  let MyYoutubeChannel = "Explore_with_nir"
+
+//  let anothername = MyYoutubeChannel
+//   anothername = "chaiorcode"
+//  console.log(MyYoutubeChannel);
+//  console.log(anothername);
+
+ let userOne = {
+    Email: "userOne01@gmail.com",
+    upi: "nir@ybl"
+ }
+
+ let UserTwo = userOne
+ UserTwo.Email = "nirjsodo@fddfv"
+
+ console.log(UserTwo);
+ console.log(userOne);
+ 
+ 
+ 
+   
+ 
 
