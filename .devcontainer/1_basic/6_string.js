@@ -28,17 +28,24 @@ console.log((url.replace("%20", "_")));//replace %20 to => _
 console.log((url.includes("Rohit")));//replace %20 to => _
 
 
-console.log(String.fromCodePoint(99));// C
-console.log(String.fromCodePoint(999));//ϧ
-console.log(String.fromCodePoint(9999));//✏
-console.log(String.fromCodePoint(100));//d
-console.log(String.fromCodePoint(1000));//Ϩ
-console.log(String.fromCodePoint(10000));//✐
-console.log(String.fromCodePoint(12345));//〹
-console.log(String.fromCodePoint(90983,88368));//𖍧𕤰
-console.log(String.fromCodePoint(82239,54863));//𔄿홏
+console.log(String.fromCodePoint(41));//
+console.log(String.fromCodePoint(12));//
+console.log(String.fromCodePoint(29));//
+console.log(String.fromCodePoint(28));//
+console.log(String.fromCodePoint(9));//
+console.log(String.fromCodePoint(41));//
+console.log(String.fromCodePoint(29));//
+console.log(String.fromCodePoint(28));//
+console.log(String.fromCodePoint(4.0));//
+console.log(String.fromCodePoint(41));//
+console.log(String.fromCodePoint(128525));//😍
+// console.log(String.fromCodePoint(4.00));//
 
+ const icons = '☃★♲';
 
+ console.log(icons.codePointAt(0));
+
+ 
 
 
 
