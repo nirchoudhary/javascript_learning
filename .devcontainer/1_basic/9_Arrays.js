@@ -20,4 +20,14 @@ console.log(MyArr2);
 console.log(MyArr2.includes(10))
 console.log(MyArr2.indexOf(9));
 
+const newArr = myArr.join()// jion more than one array
+console.log(myArr);
+console.log( newArr);
+
+// slice  ,  splice 
+
+
+
+
+
 
