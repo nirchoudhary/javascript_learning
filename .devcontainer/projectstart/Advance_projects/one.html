@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub User Info</title>
+  </head>
+  <body>
+    <button id="button">Fetch User Info</button>
+    <div>
+      <img
+        src=""
+        alt="User Avatar"
+        id="avatar"
+        style="width: 100px; height: 100px"
+      />
+    </div>
+    <p>Username: <span id="username"></span></p>
+    <p>Followers: <span id="followers"></span></p>
+    <p>Following: <span id="following"></span></p>
+
+    <script>
+      const requestUrl = "https://api.github.com/users/nirchoudhary";
+
+      document.getElementById("button").addEventListener("click", function () {
+        const xml = new XMLHttpRequest();
+        xml.open("GET", requestUrl);
+
+        xml.onreadystatechange = function () {
+          console.log(xml.readyState);
+          if (xml.readyState === 4 && xml.status === 200) {
+            const data = JSON.parse(this.responseText);
+            // Display the fetched data in the HTML
+            document.getElementById("avatar").src = data.avatar_url;
+            document.getElementById("username").textContent = data.login;
+            document.getElementById("followers").textContent = data.followers;
+            document.getElementById("following").textContent = data.following;
+          }
+        };
+
+        xml.send();
+      });
+    </script>
+  </body>
+</html>
